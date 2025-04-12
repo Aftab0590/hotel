@@ -47,14 +47,7 @@ export const updateHotelById = async (req, res) => {
       
       res.status(400).json({ message: "hotel not found!!!" });
     }
-    //if (Hotel.availability) {
-      
-    //  return res.status(200).json({ message: "  room is available!!!" });
-      
-    //} else {
-    //  (!Hotel.availability)
-    //    res.status(500).json({ message: "No room available!!!!" });
-    //}
+
   } 
     catch (error) {
   console.log(error);

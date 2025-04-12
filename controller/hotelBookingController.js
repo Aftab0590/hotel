@@ -24,7 +24,7 @@ export const createHotelBooking=async (req,res)=>{
 //all hotel booking....
 export const getHotelBooking=async (req,res)=>{
     try {
-        const bookings=await hotelBooking.find();
+        const bookings=await getHotelBookingService(req.query.id)
         res.status(201).json(bookings);
     } catch (error) {
         

@@ -8,9 +8,8 @@ import{createHotelBooking,getHotelBooking,getHotelbookingById,
 const router = express.Router();
 
 router.post('/createHotelBooking',createHotelBooking);
-router.post('/getHotelBooking',getHotelBooking);
-router.post('/getHotelbookingById:id',getHotelbookingById);
-router.post('/updateHotelbookingById:id',updateHotelbookingById);
-router.post('/deleteHotelbookingById:id',deleteHotelbookingById);
+router.get('/getHotelBooking',getHotelBooking);
+router.put('/updateHotelbookingById:id',updateHotelbookingById);
+router.delete('/deleteHotelbookingById:id',deleteHotelbookingById);
 
 export default router;

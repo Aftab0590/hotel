@@ -10,10 +10,9 @@ export const createHotelBookingSevice= async (data)=>{
     }
 }
 
-export const getHotelBookingService=async (data)=>{
+export const getHotelBookingService=async (id)=>{
     try {
-        const getHotelsBooking=new HotelBooking({data});
-        return await getHotelsBooking.find({data});
+        return await HotelBooking.findById(id)
     } catch (error) {
         throw  error;
     }
